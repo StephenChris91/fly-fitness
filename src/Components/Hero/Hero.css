@@ -1,0 +1,6 @@
+.hero-container{
+    background: url('../../Images//header-image.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

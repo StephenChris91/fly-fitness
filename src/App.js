@@ -1,31 +1,33 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 //pages
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import Login from "./Pages/Login/Login";
-import Memberships from "./Pages/Memberships/Memberships";
+import Equipments from "./Pages/Equipments/Equipments";
 import Shop from "./Pages/Shop/Shop";
 import Signup from "./Pages/Signup/Signup";
 import Staff from "./Pages/Staff/Staff";
 
+//components
+import Navbar from "./Components/Navbar/Navbar";
+
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/memberships" element={<Memberships />} />
-          <Route path="/shops" element={<Shop />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/staff" element={<Staff />} />
-        </Routes>
-      </Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/equipments" element={<Equipments />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/staff" element={<Staff />} />
+      </Routes>
     </div>
   );
 }

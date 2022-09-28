@@ -1,0 +1,9 @@
+.box-image{
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+.box-image img{
+    width: 700px;
+    border-radius: 5px;
+}
