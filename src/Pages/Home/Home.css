@@ -1,0 +1,15 @@
+.boxes-container{
+    width: 1200px
+}
+
+.box-right{
+    margin-right: 80px;
+}
+
+.box-left{
+    margin-left: 80px;
+}
+
+.pricing-section button{
+    color: #000
+}
