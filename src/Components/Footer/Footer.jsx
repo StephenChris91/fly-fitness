@@ -28,11 +28,15 @@ export default function Footer() {
                     </div>
                     <div className='flex items-center justify-between gap-5 text-left mt-[-30px]'>
                         <HiOutlinePhone className='text-blue-800 text-2xl'/>
-                        <p>info@flyfitnessfactory.com</p>
+                        <p>08054224781</p>
                     </div>
                     <div className='flex items-center justify-between gap-5 text-left mt-[-30px]'>
                         <HiOutlineLocationMarker className='text-blue-800 text-2xl' />
-                        <p>info@flyfitnessfactory.com</p>
+                        <p>Ariwola House, Opposite Ansarudeen School Sango-Eleyele Road, Ibadan, Nigeria.</p>
+                    </div>
+                    <div className='flex items-center justify-between gap-5 text-left mt-[-30px]'>
+                        <HiOutlineLocationMarker className='text-blue-800 text-2xl' />
+                        <p>Ground Floor, Providence Court Building Ajibade Junction, Mokola Road Ibadan, Nigeria.</p>
                     </div>
                 </div>
             </footer>
