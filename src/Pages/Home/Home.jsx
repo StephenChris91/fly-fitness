@@ -13,7 +13,9 @@ import Box from '../../Components/Box/Box'
 import TextCard from '../../Components/TextCard/TextCard'
 import Button from '../../Components/Button/Button'
 import Slider from '../../Components/Slider/Slider'
-import TestimonialCard from '../../Components/Testimonial/TestimonilaCard';
+import Testimonial from '../../Components/Testimonial/Testimonial'
+
+
 
 //images
 import Image1 from "../../Images/exercise -2.jpg"
@@ -112,8 +114,8 @@ export default function Home() {
                     <h1 className="team-section-header text-4xl font-bold text-center mt-32">Meet Our Team</h1>
                     <Slider />
                 </div>
-                <div className="testimonial-section">
-                    <TestimonialCard testimony='this is a random testimonial, Got it' name='Stephen Chris' location='Bradford, UK'/>
+                <div className="testimonial-section px-64  bg-blue-50">
+                    <Testimonial />
                 </div>
             </div>
         </>
