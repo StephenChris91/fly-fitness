@@ -2,7 +2,7 @@
   "name": "fly-fitness",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/StephenChris91/fly-fitness",
+  "homepage": "https://stephenchris91.github.io/fly-fitness/",
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "@testing-library/jest-dom": "^5.16.5",

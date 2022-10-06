@@ -9,7 +9,7 @@ export default function Layout({ children }) {
     
 
     return (
-        <div className='' >
+        <div>
             <Navbar />
             {children}
             <Footer />

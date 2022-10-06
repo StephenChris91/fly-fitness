@@ -11,32 +11,40 @@ export default function Footer() {
     
 
     return (
-        <div className='footer-section px-64 py-32' >
-            <footer className='flex justify-between gap-5'>
-                <img src={Logo} alt='footer logo' className='w-70 h-20 mt-[-12px]'/>
-                <div className='flex flex-col justify-between gap-4'>
-                    <h1 className='text-2xl font-bold text-left'>Quick Links</h1>
-                    <NavLink to='/'>Home</NavLink>
-                    <NavLink to='/about'>About</NavLink>
-                    <NavLink to='/staff'>Staff</NavLink>
+        <div className='footer-section px-10 py-12' >
+            <footer className='flex justify-around gap-12'>
+                <div className="footer-div-sections">
+                    <img src={Logo} alt='footer-logo' className='mt-[-10px]' />
                 </div>
-                <div className='flex flex-col justify-between gap-4'>
-                    <h1 className='text-2xl font-bold text-left mb-0'>Contact</h1>
-                    <div className='flex items-center justify-between gap-5 text-left mt-[-30px]'>
-                        <HiMail className='text-blue-800 text-2xl'/>
-                        <p>info@flyfitnessfactory.com</p>
+                <div className="footer-div-sections">
+                    <h1 className='font-bold text-lg mb-10'>Quick Links</h1>
+                    <div className='flex flex-col gap-4 font-bold'>
+                        <NavLink to='/' className=''>Home</NavLink>
+                        <NavLink to='/about' className=''>About</NavLink>
+                        <NavLink to='/staff' className=''>Staff</NavLink>
                     </div>
-                    <div className='flex items-center justify-between gap-5 text-left mt-[-30px]'>
-                        <HiOutlinePhone className='text-blue-800 text-2xl'/>
-                        <p>08054224781</p>
-                    </div>
-                    <div className='flex items-center justify-between gap-5 text-left mt-[-30px]'>
-                        <HiOutlineLocationMarker className='text-blue-800 text-2xl' />
-                        <p>Ariwola House, Opposite Ansarudeen School Sango-Eleyele Road, Ibadan, Nigeria.</p>
-                    </div>
-                    <div className='flex items-center justify-between gap-5 text-left mt-[-30px]'>
-                        <HiOutlineLocationMarker className='text-blue-800 text-2xl' />
-                        <p>Ground Floor, Providence Court Building Ajibade Junction, Mokola Road Ibadan, Nigeria.</p>
+                    
+                </div>
+                <div className="footer-div-sections">
+                    <h1 className='font-bold text-lg mb-10'>Contact</h1>
+                    <div className='footer-contact-info flex flex-col gap-4'>
+                        <div className='flex items-start justify-start gap-4'>
+                            <HiMail className='m-0 text-2xl'/><span className='m-0'>info@flyfitness.com</span>
+                        </div>
+                        <div className='flex items-start justify-start gap-4'>
+                            <HiOutlinePhone className='m-0 text-2xl'/><span className='m-0'>08054224781</span>
+                        </div>
+                        <div className='flex items-start justify-start gap-4'>
+                            <HiOutlineLocationMarker className='ml-0 text-2xl'/><p>Ariwola House, 
+                                <br />Opposite Ansarudeen School <br/>Sango-Eleyele Road,
+                                <br />Ibadan, Nigeria.</p>
+                        </div>
+                        <div className='flex items-start justify-start gap-4'>
+                            <HiOutlineLocationMarker className='ml-0 text-2xl'/><p>Ground Floor, 
+                                <br />Providence Court Building
+                                <br />Ajibade Junction, Mokola Road
+                                <br />Ibadan, Nigeria.</p>
+                        </div>
                     </div>
                 </div>
             </footer>
