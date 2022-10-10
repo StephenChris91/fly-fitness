@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container, Row, NavItem } from 'react-bootstrap'
-import { NavLink, Link } from 'react-router-dom'
+import { Container, Row } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 import Button from '../Button/Button'
 
 //styles
@@ -19,6 +19,7 @@ export default function Navbar() {
                             <NavLink to='/about' className='nav-link'>About</NavLink>
                             <NavLink to='/equipments' className='nav-link'>Equipments</NavLink>
                             <NavLink to='/Shop' className='nav-link'>Shop</NavLink>
+                            <NavLink to='/staff' className='nav-link'>Staff</NavLink>
                             <NavLink to='/contact' className='nav-link'>Contact</NavLink>
                             <Button>Register</Button>
                         </Row>  

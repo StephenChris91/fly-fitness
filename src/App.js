@@ -12,7 +12,6 @@ import Signup from "./Pages/Signup/Signup";
 import Staff from "./Pages/Staff/Staff";
 
 //components
-import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   return (

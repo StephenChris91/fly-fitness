@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../../Components/Hero/Hero'
 import Box from '../../Components/Box/Box'
 import TextCard from '../../Components/TextCard/TextCard'
+import Testimonial from '../../Components/Testimonial/Testimonial'
 
 
 //styles
@@ -109,7 +110,7 @@ export default function About() {
                             <Box imageUrl={Image1}></Box>
                         </div>
                         <div className='text-container'>
-                            <TextCard cardHeader='CORE VALUES'  cardPara='The traits or qualities that we consider not just worthwhile
+                            <TextCard cardHeader='OUR MISSION'  cardPara='The traits or qualities that we consider not just worthwhile
                             they represent for us as an organization. The highest priorities deeply held beliefs, core, fundamental driving forces' cardPara2='They are at the heart of what Fly Fitness Factory and it’s
                             employees stands for:'/>
                             {valuesList.map(list => (
@@ -133,6 +134,20 @@ export default function About() {
                         </div>
                     </div>
                 </div>
+                <div className="cta mb-10">
+                    <h1 className="font-bold text-3xl text-center mb-5">Happiness at your reach</h1>
+                    <p className='mb-4'>Fly Fitness Factory operates and manages fitness facilities beyond the idea of a simple gym, it is geared towards enabling your happiness.</p>
+
+                    <p className='mb-4'>Since launching of its first branch on the 1st of December, 2021 it has postioned itself to cater to the country’s growing fitness community. In
+                    addition, to providing excellent and effecient fitness services, it also geared towards contributing to the economic development of Nigeria and the 
+                    world in general</p>
+
+                    <p className='mb-4'>We are a physical fitness centre where we train, coach, help and push people to attain healthy lifestyle, a more balance and Fit body. 
+                    Fly Fitness Factory is where lifestyle are changed for the better.</p>
+                </div>
+            </div>
+            <div className="about-testimonial bg-gray-100 w-full">
+                <Testimonial />
             </div>
         </>
     )
