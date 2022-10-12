@@ -1,8 +1,9 @@
-import { Card } from 'flowbite-react'
+import { Card, Button } from 'flowbite-react'
 
 
 //images
 //import Button from '../../Components/Button/Button'
+import './Card.css'
 
 
 export default function SingleCard({imageUrl, productName, productPrice}) {
@@ -22,6 +23,9 @@ export default function SingleCard({imageUrl, productName, productPrice}) {
                 <p className="font-normal text-gray-700 dark:text-gray-400 text-center">
                     {productPrice}
                 </p>
+                <div className='flex items-center justify-center mx-auto'>
+                    <Button id='card-btn'>Place Order</Button>
+                </div>
             </Card>
         </div>
     )

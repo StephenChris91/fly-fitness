@@ -3,7 +3,6 @@ import React from 'react'
 
 //components
 import Card from './Card'
-import Button from '../../Components/Button/Button'
 
 
 
@@ -86,7 +85,6 @@ export default function CardList  () {
                         productName={product.name} 
                         productPrice={product.price}
                         className='mb-20'>
-                        <Button id='card-btn'>Place Order</Button>
                     </Card>
                 </div>
             ))}

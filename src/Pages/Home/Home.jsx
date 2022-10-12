@@ -11,7 +11,7 @@ import { useEffect } from "react";
 import Hero from '../../Components/Hero/Hero'
 import Box from '../../Components/Box/Box'
 import TextCard from '../../Components/TextCard/TextCard'
-import Button from '../../Components/Button/Button'
+import {Button} from 'flowbite-react'
 import Slider from '../../Components/Slider/Slider'
 import Testimonial from '../../Components/Testimonial/Testimonial'
 
@@ -108,7 +108,7 @@ export default function Home() {
                 <div className="pricing-section p-32 flex flex-col items-center justify-between bg-red-50">
                     <h2 className="text-5xl font-bold text-center text-gray-900 mb-10">MEMBERSHIP PLAN OPTIONS</h2>
                     <p className='font-normal text-center text-gray-700 mb-5'>Our certified trainers are here to help you get fit and into shape</p>
-                    <Button className="bg-white pricing-btn">VIEW OPTIONS</Button>
+                    <Button className="bg-white" id='pricing-btn'>VIEW OPTIONS</Button>
                 </div>
                 <div className="team-section flex item-center justify-between pt-11 px-64 bg-gray-200">
                     <h1 className="team-section-header text-4xl font-bold text-center mt-32">Meet Our Team</h1>

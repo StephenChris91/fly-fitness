@@ -4,6 +4,9 @@ import React from 'react'
 import Hero from '../../Components/Hero/Hero'
 import { form, Label, TextInput, Button, Textarea } from 'flowbite-react'
 
+//styles
+import './Contact.css'
+
 export default function Contact() {
     
 
@@ -21,8 +24,7 @@ export default function Contact() {
                     <div className="mb-2 block">
                     <Label
                         htmlFor="name"
-                        value="Your name"
-                    />
+                        className='text-white'>Your Name</Label>
                     </div>
                     <TextInput
                     id="name"
@@ -38,6 +40,7 @@ export default function Contact() {
                     <Label
                         htmlFor="Email"
                         value="Your Email Address"
+                        className='text-white'
                     />
                     </div>
                     <TextInput

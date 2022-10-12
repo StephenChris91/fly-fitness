@@ -1,31 +1,68 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
-import Button from '../Button/Button'
+import {Button} from 'flowbite-react'
+import { Navbar } from 'flowbite-react'
 
 //styles
 import './navbar.css'
 
-export default function Navbar() {
+import Logo from '../../Images/logoWhite.png'
+
+
+export default function Navigation() {
     
 
     return (
         <>
-            <Container fluid className='navbar bg-sky-600 p-5'>
-                <Container>
-                    <nav>
-                        <Row className='navbar-links text-center text-white'>
-                            <NavLink to='/' className='nav-link'>Home</NavLink>
-                            <NavLink to='/about' className='nav-link'>About</NavLink>
-                            <NavLink to='/equipments' className='nav-link'>Equipments</NavLink>
-                            <NavLink to='/Shop' className='nav-link'>Shop</NavLink>
-                            <NavLink to='/staff' className='nav-link'>Staff</NavLink>
-                            <NavLink to='/contact' className='nav-link'>Contact</NavLink>
-                            <Button>Register</Button>
-                        </Row>  
-                    </nav>
-                </Container>
+            <Container fluid className=' bg-sky-600 p-5'>
+                <Navbar
+                fluid={true}
+                rounded={true}
+                id='navbar'
+                >
+                <Navbar.Brand href="/">
+                    <img
+                    src={Logo}
+                    className="mr-3 h-30 sm:h-9 logo"
+                    alt="Logo"
+                    />
+                </Navbar.Brand>
+                <div className="flex md:order-2">
+                    <Button className='bg-border-lined' id='menu-btn'>
+                        Register
+                    </Button>
+                    <Navbar.Toggle />
+                </div>
+                <Navbar.Collapse>
+                    
+                    <NavLink
+                    to="/"
+                    className='text-white font-bold'
+                    >
+                    Home
+                    </NavLink>
+                    <NavLink to="/about" className='text-white font-bold'>
+                    About
+                    </NavLink>
+                    <NavLink to="/equipments" className='text-white font-bold'>
+                    Memberships
+                    </NavLink>
+                    <NavLink to="/shop" className='text-white font-bold'>
+                    Shop
+                    </NavLink>
+                    <NavLink to="/staff" className='text-white font-bold'>
+                    Staff
+                    </NavLink>
+                    <NavLink to="/contact" className='text-white font-bold'>
+                    Contact
+                    </NavLink>
+                </Navbar.Collapse>
+                
+            </Navbar>
             </Container>
+
+            
         </>
     )
 }

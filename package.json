@@ -2,7 +2,7 @@
   "name": "fly-fitness",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://stephenchris91.github.io/fly-fitness/",
+  "homepage": "http://www.flyfitnessfactory.ng/",
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "@testing-library/jest-dom": "^5.16.5",
@@ -52,8 +52,8 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.11",
-    "postcss": "^8.4.16",
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.17",
     "tailwindcss": "^3.1.8"
   }
 }
