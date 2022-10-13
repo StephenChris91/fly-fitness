@@ -2,7 +2,8 @@ import React from 'react'
 
 //components
 import Hero from '../../Components/Hero/Hero'
-import { form, Label, TextInput, Button, Textarea } from 'flowbite-react'
+import { form, Label, TextInput, Textarea } from 'flowbite-react'
+import Button from '../../Components/Button/Button'
 
 //styles
 import './Contact.css'
@@ -97,9 +98,7 @@ export default function Contact() {
                     required={true}
                     rows={6}
                 />
-                <Button type="submit" className='mx-auto bg-white bg-transparent'>
-                    SEND
-                </Button>
+                <Button id='contact-btn'>Send</Button>
                 </form>
             </div>
         </>

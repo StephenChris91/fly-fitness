@@ -1,3 +1,10 @@
 label{
     color: #fff;
 }
+
+#contact-btn{
+    background-color: black ;
+    border: 2px solid orange;
+    border-radius: 5px;
+    width: 100%;
+}

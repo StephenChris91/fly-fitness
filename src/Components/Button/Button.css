@@ -1,8 +1,4 @@
 .btn{
-    border: 2px solid orange;
-    padding: 10px;
-    color: white;
-    width: 200px;
-    border-radius: 3px;
-    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
 }

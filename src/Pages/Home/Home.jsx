@@ -60,7 +60,7 @@ export default function Home() {
                         <div className="mr-80" ref={ref} variants={boxVariant} initial= "false" animate={control}>
                             <Box imageUrl={Image1}></Box>
                         </div>
-                        <div className='text-container '>
+                        <div className='text-container'>
                             <TextCard cardHeader='AEROBICS' cardPara='The high-intesity of multi-joints movements in Crossfit can help you gain muscle strengths and stamina; help you burn calories and manage weight.' />
                         </div>
                     </div>
