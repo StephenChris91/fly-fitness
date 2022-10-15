@@ -4,7 +4,7 @@ import React from 'react'
 import Hero from '../../Components/Hero/Hero'
 import { form, Label, TextInput, Textarea, Checkbox} from 'flowbite-react'
 import Button from '../../Components/Button/Button'
-import { NavLink } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 
 //styles
 import './Signup.css'
@@ -167,8 +167,17 @@ export default function Login() {
                         SEND
                     </Button>
                 </div>
-                <p className='text-white'>Already have an account? <NavLink to='/login'><strong>Login</strong></NavLink></p>
+                
                 </form>
+                <div className='text-white mt-10'>
+                    <p>Already have an account?{' '}
+                        <strong>
+                            <NavLink to='/login'>
+                                LOGIN 
+                            </NavLink>
+                        </strong>
+                    </p>
+                </div>
             </div>
         </>
     )

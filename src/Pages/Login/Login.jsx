@@ -3,6 +3,7 @@ import React from 'react'
 //components
 import Hero from '../../Components/Hero/Hero'
 import { form, Label, TextInput, Textarea } from 'flowbite-react'
+import { NavLink } from 'react-router-dom'
 import Button from '../../Components/Button/Button'
 
 //styles
@@ -35,7 +36,7 @@ export default function Login() {
                     required={true}
                     shadow={false}
                     sizing="lg"
-                    />
+                    />''
                 </div>
                 <div>
                     <div className="mb-2 block">
@@ -54,12 +55,20 @@ export default function Login() {
                     />
                 </div>
                 <div>
-                    <Button type="submit" className='mx-auto w-full' id='login-btn'>
+                    <Button width='full' padding='5' bgColor='white' type="submit" >
                         SEND
                     </Button>
                 </div>
-                
                 </form>
+                <div className='text-white mt-10'>
+                    <p>Already have an account?{' '}
+                        <strong>
+                            <NavLink to='/signup'>
+                                SIGN UP
+                            </NavLink>
+                        </strong>
+                    </p>
+                </div>
             </div>
         </>
     )
