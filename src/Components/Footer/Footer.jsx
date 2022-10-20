@@ -12,9 +12,9 @@ export default function Footer() {
 
     return (
         <div className='footer-section px-10 py-12' >
-            <footer className='flex justify-around gap-12'>
+            <footer className='flex justify-around gap-12 lg:flex-row sm:flex-col'>
                 <div className="footer-div-sections">
-                    <img src={Logo} alt='footer-logo' className='mt-[-10px]' />
+                    <img src={Logo} alt='footer-logo' className='mt-[-10px] lg:ml-0 sm:ml-[-50px]' />
                 </div>
                 <div className="footer-div-sections">
                     <h1 className='font-bold text-lg mb-10'>Quick Links</h1>

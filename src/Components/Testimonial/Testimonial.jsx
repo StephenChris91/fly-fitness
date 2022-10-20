@@ -31,7 +31,7 @@ export default function Testimonial(props) {
     ]
 
     return (
-        <div className='flex items-center justify-center gap-2 p-32'>
+        <div className='flex lg:flex-row sm:flex-col sm:mx-auto items-center justify-center lg:gap-2 sm:gap-32 lg:p-32 sm:p-10'>
             {testimonialDetails.map(testDetails => (
                 <div className='h-64' key={testDetails.id}>
                     <TestimonialCard testimony={testDetails.testimonial} name={testDetails.name} location={testDetails.location}/>

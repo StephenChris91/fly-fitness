@@ -18,7 +18,7 @@ export default function Login() {
     return (
         <>
             <img src={Logo} alt='Login Logo' className='flex items-center justify-between mx-auto pt-10'  />
-            <div className='bg-sky-600 mx-auto mt-20 py-40 px-20 w-[1200px]'>
+            <div className='bg-sky-600 mx-auto mt-20 py-40 lg:px-20 sm:px-[15px] lg:w-[1200px] sm:[500px]'>
             <h1 className='font-bold text-white text-4xl mb-10'>CREATE ACCOUNT</h1>
             <form className="flex flex-col gap-4">
                 <div>
@@ -54,55 +54,21 @@ export default function Login() {
                     sizing="lg"
                     />
                 </div>
-                <div className='flex items-center justify-between mx-auto w-full'>
-                    <div className="mb-2 block">
-                        <div className=' '>
-                            <Label
-                            htmlFor="Last Name"
-                            value="Last Name"
+                <div className="mb-2 block">
+                    <div className=' '>
+                        <Label
+                        htmlFor="Date"
+                        value="Date Of Birth"
                         />
-                            </div>
-                            <TextInput
+                        </div>
+                        <TextInput
                             id="Name"
                             placeholder='Your Last Name...'
-                            type="text"
+                            type="date"
                             required={true}
                             shadow={false}
                             sizing="lg"
-                            />
-                        </div>
-                    <div className="mb-2 block">
-                        <div className=' '>
-                            <Label
-                            htmlFor="Last Name"
-                            value="Last Name"
                         />
-                            </div>
-                            <TextInput
-                            id="Name"
-                            placeholder='Your Last Name...'
-                            type="text"
-                            required={true}
-                            shadow={false}
-                            sizing="lg"
-                            />
-                        </div>
-                    <div className="mb-2 block">
-                        <div className=''>
-                            <Label
-                            htmlFor="Last Name"
-                            value="Last Name"
-                        />
-                            </div>
-                            <TextInput
-                            id="Name"
-                            placeholder='Your Last Name...'
-                            type="text"
-                            required={true}
-                            shadow={false}
-                            sizing="lg"
-                            />
-                        </div>
                 </div>
                 <div className="mb-2 block">
                         <div className=''>
@@ -163,7 +129,7 @@ export default function Login() {
                             Privacy Policy </strong></span>
                         </div>
                     </div>
-                    <Button width='full' padding='5' bgColor='white' type="submit" >
+                    <Button width='full' padding='5' bgColor='gray-900' color='white' hover='green-800' type="submit" >
                         SEND
                     </Button>
                 </div>

@@ -18,7 +18,7 @@ export default function Login() {
     return (
         <>
             <img src={Logo} alt='Login Logo' className='flex items-center justify-between mx-auto pt-10'  />
-            <div className='bg-sky-600 mx-auto mt-20 py-40 px-20 w-[1200px]'>
+            <div className='bg-sky-600 mx-auto mt-20 py-40 px-20 w-[1200px] '>
             <h1 className='font-bold text-white text-4xl mb-10'>LOGIN</h1>
             <form className="flex flex-col gap-4">
                 <div>
@@ -55,7 +55,7 @@ export default function Login() {
                     />
                 </div>
                 <div>
-                    <Button width='full' padding='5' bgColor='white' type="submit" >
+                    <Button width='full' padding='5' bgColor='gray-900' color='white' type="submit" >
                         SEND
                     </Button>
                 </div>
