@@ -1,8 +1,6 @@
-import React from 'react'
 
 //components
-import Hero from '../../Components/Hero/Hero'
-import { form, Label, TextInput, Textarea } from 'flowbite-react'
+import { form, Label, TextInput } from 'flowbite-react'
 import { NavLink } from 'react-router-dom'
 import Button from '../../Components/Button/Button'
 
@@ -18,7 +16,7 @@ export default function Login() {
     return (
         <>
             <img src={Logo} alt='Login Logo' className='flex items-center justify-between mx-auto pt-10'  />
-            <div className='bg-sky-600 mx-auto mt-20 py-40 px-20 w-[1200px] '>
+            <div className='bg-sky-600 mx-auto mt-20 py-40 lg:px-20 sm:px-[15px] lg:w-[1200px] sm:[500px] '>
             <h1 className='font-bold text-white text-4xl mb-10'>LOGIN</h1>
             <form className="flex flex-col gap-4">
                 <div>

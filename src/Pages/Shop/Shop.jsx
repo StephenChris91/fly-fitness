@@ -20,7 +20,7 @@ export default function Shop() {
             />
             <div className='w-full'>
                 <div className="lg:w-[1200px] sm:-[400px] shop-container lg:p-0 sm:p-10 py-40 flex items-center justify-evenly flex-wrap mx-auto">
-                    <h1 className='text-center font-bold text-4xl'>Shop</h1>
+                    <h1 className='text-center font-bold text-4xl mt-10'>Shop</h1>
                     <div className='py-12 flex lg:flex-row sm:flex-col items-center justify-evenly lg:flex-wrap sm:flex-nowrap mx-auto'>
                         <CardList />
                     </div>

@@ -1,11 +1,3 @@
-import React from 'react'
-
-//motion
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-
-
 
 //components
 import Hero from '../../Components/Hero/Hero'
@@ -30,21 +22,6 @@ import './Home.css'
 
 export default function Home() {
 
-    const boxVariant = {
-        visible: { opacity: 1, x: 50, transition: { duration: 0.3 } },
-        hidden: { opacity: 0, x: -50 }
-    };
-
-    const control = useAnimation();
-    const [ref, inView] = useInView();
-
-    useEffect(() => {
-        if (inView) {
-            control.start("visible");
-        } else {
-            control.start("hidden");
-        }
-    }, [control, inView]);
 
 
     return (
@@ -57,24 +34,24 @@ export default function Home() {
                 <div className="mx-auto flex flex-col justify-between lg:w-[1200px] sm:w-[400px] sm:p-10">
                     <h1 className="text-4xl mb-20 text-center mx-auto font-bold">OUR TRAINING PROGRAMS</h1>
                     <div className="flex lg:flex-row sm:flex-col items-center justify-between mx-auto mb-32">
-                        <div className="lg:mr-80 sm:mr-0 " ref={ref} variants={boxVariant} initial="false" animate={control}>
+                        <div className="lg:mr-80 sm:mr-0 ">
                             <Box imageUrl={Image1}></Box>
                         </div>
                         <div className='text-container'>
                             <TextCard cardHeader='AEROBICS' cardPara='The high-intesity of multi-joints movements in Crossfit can help you gain muscle strengths and stamina; help you burn calories and manage weight.'
-                            ref={ref} variants={boxVariant} initial="false" animate={control}></TextCard>
+                            ></TextCard>
                         </div>
                     </div>
                     <div className="flex lg:flex-row sm:flex-col-reverse items-center justify-between mx-auto mb-32">
                         <div className='text-container'>
                             <TextCard cardHeader='YOGA' cardPara='Get flexible, and improve your respiration, energy and over all vitality with our yoga programs tailored to suit your specific needs (beginner, intermediate and expert classes)'></TextCard>
                         </div>
-                        <div className="lg:ml-80 sm:ml-0" ref={ref} variants={boxVariant} initial="hidden" animate={control}>
+                        <div className="lg:ml-80 sm:ml-0">
                             <Box imageUrl={Image5}></Box>
                         </div>
                     </div>
                     <div className="flex lg:flex-row sm:flex-col items-center justify-between mx-auto mb-32">
-                        <div className="lg:mr-80 sm:mr-0" ref={ref} variants={boxVariant} initial="hidden" animate={control}>
+                        <div className="lg:mr-80 sm:mr-0">
                             <Box imageUrl={Image4}></Box>
                         </div>
                         <div className='text-container '>
@@ -85,12 +62,12 @@ export default function Home() {
                         <div className='text-container '>
                             <TextCard cardHeader='CUPPING THERAPY(HIJAMA)' cardPara='At FLYFITNESS FACTORY, you can enjoy the full benefits of the ancient Chinese treatment that helps with pain relief, chronic fatigue, relief from lung disease, healthy skin, digestive problems among many other benefits.' />
                         </div>
-                        <div className="lg:ml-80 sm:ml-0" ref={ref} variants={boxVariant} initial="hidden" animate={control}>
+                        <div className="lg:ml-80 sm:ml-0">
                             <Box imageUrl={Image6}></Box>
                         </div>
                     </div>
                     <div className="flex lg:flex-row sm:flex-col items-center justify-between mx-auto mb-32">
-                        <div className="lg:mr-80 sm:mr-0" ref={ref} variants={boxVariant} initial="hidden" animate={control}>
+                        <div className="lg:mr-80 sm:mr-0">
                             <Box imageUrl={Image7}></Box>
                         </div>
                         <div className='text-container '>
@@ -101,7 +78,7 @@ export default function Home() {
                         <div className='text-container mr-40'>
                             <TextCard cardHeader='EQUIPMENTS' cardPara='We use standard equipment to ensure that you maximize your potentials.' />
                         </div>
-                        <div className="w-80" ref={ref} variants={boxVariant} initial="hidden" animate={control}>
+                        <div className="w-80">
                             <Box imageUrl={Image8}></Box>
                         </div>
                     </div>
@@ -111,11 +88,11 @@ export default function Home() {
                     <p className='font-normal text-center text-gray-700 mb-5'>Our certified trainers are here to help you get fit and into shape</p>
                     <Button className="bg-white" id='pricing-btn'>VIEW OPTIONS</Button>
                 </div>
-                <div className="team-section flex lg:flex-row sm:flex-col item-center lg:justify-between sm:justify-center lg:mx-0 sm:mx-auto pt-11 sm:pb-30 lg:px-64 sm:px-10 bg-gray-200 sm:w[400px]">
-                    <h1 className="team-section-header text-4xl font-bold text-center mt-32">Meet Our Team</h1>
+                <div className="team-section flex lg:flex-row sm:flex-col lg:items-center sm:item-center lg:justify-between sm:justify-center lg:mx-0 sm:mx-auto pt-11 sm:pb-30 lg:px-64 sm:px-10 bg-gray-200 sm:w[400px]">
+                    <h1 className="team-section-header text-4xl font-bold text-center lg:mt-32 sm:mt-0 lg:mb-0 sm:mb-10">Meet Our Team</h1>
                     <Slider />
                 </div>
-                <div className="testimonial-section lg:px-64 sm:px-10  bg-blue-50">
+                <div className="testimonial-section lg:py-0 sm:py-20 lg:px-64 sm:px-10  bg-blue-50">
                     <Testimonial />
                 </div>
             </div>

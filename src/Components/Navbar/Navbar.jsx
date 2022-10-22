@@ -30,6 +30,11 @@ export default function Navigation() {
                 </Navbar.Brand>
                 <div className="flex md:order-2">
                     <Navbar.Toggle />
+                    <NavLink to='/signup'>
+                        <Button className='bg-border-lined ml-auto' id='menu-btn'>
+                            Register
+                        </Button>
+                    </NavLink>
                 </div>
                 <Navbar.Collapse>
                     <NavLink
@@ -53,13 +58,9 @@ export default function Navigation() {
                     <NavLink to="/contact" className='text-white font-bold'>
                     Contact
                     </NavLink>
-                    <NavLink to='/signup'>
-                        <Button className='bg-border-lined ml-auto' id='menu-btn'>
-                            Register
-                        </Button>
-                    </NavLink>
+                    
                 </Navbar.Collapse>
-                
+               
             </Navbar>
             </Container>
 

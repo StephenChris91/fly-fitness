@@ -135,7 +135,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="cta mb-10">
-                    <h1 className="font-bold text-3xl lg:text-center sm:text-start mb-5">Happiness at your reach</h1>
+                    <h1 className="font-bold text-3xl lg:text-center sm:text-start  mb-5">Happiness at your reach</h1>
                     <p className='mb-4'>Fly Fitness Factory operates and manages fitness facilities beyond the idea of a simple gym, it is geared towards enabling your happiness.</p>
 
                     <p className='mb-4'>Since launching of its first branch on the 1st of December, 2021 it has postioned itself to cater to the country’s growing fitness community. In

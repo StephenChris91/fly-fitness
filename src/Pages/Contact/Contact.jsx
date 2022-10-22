@@ -1,4 +1,3 @@
-import React from 'react'
 
 //components
 import Hero from '../../Components/Hero/Hero'
@@ -18,7 +17,7 @@ export default function Contact() {
                 lowerText="SEND US YOUR INFORMATION AND WE WILL GET IN CONTACT WITH YOU AS SOON AS WE CAN"
             />
 
-            <div className='bg-sky-600 mx-auto mt-20 py-40 px-20 w-[1200px]'>
+            <div className='bg-sky-600 mx-auto mt-20 py-40 lg:px-20 sm:px-[15px] lg:w-[1200px] sm:[500px]'>
             <h1 className='font-bold text-center text-white text-4xl mb-10'>GET STARTED TODAY.</h1>
             <form className="flex flex-col gap-4">
                 <div>
@@ -98,7 +97,9 @@ export default function Contact() {
                     required={true}
                     rows={6}
                 />
-                <Button id='contact-btn'>Send</Button>
+                <Button width='full' padding='5' bgColor='gray-900' color='white' hover='green-800' type="submit" >
+                        SEND
+                </Button>
                 </form>
             </div>
         </>
