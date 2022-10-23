@@ -8,6 +8,10 @@ import Slider from '../../Components/Slider/Slider'
 import Testimonial from '../../Components/Testimonial/Testimonial'
 
 
+//react-spring
+import { useSpring, animated } from 'react-spring'
+
+
 
 //images
 import Image1 from "../../Images/exercise -2.jpg"
@@ -22,6 +26,14 @@ import './Home.css'
 
 export default function Home() {
 
+    const fadeInPropsLeft = useSpring({
+        from: {marginLeft: -500, opacity: 0},
+        to: {marginLeft: 0, opacity: 1}
+    })
+    const fadeInPropsRight = useSpring({
+        from: {marginRight: -500, opacity: 0},
+        to: {marginRight: 0, opacity: 1}
+    })
 
 
     return (
@@ -34,9 +46,9 @@ export default function Home() {
                 <div className="mx-auto flex flex-col justify-between lg:w-[1200px] sm:w-[400px] sm:p-10">
                     <h1 className="text-4xl mb-20 text-center mx-auto font-bold">OUR TRAINING PROGRAMS</h1>
                     <div className="flex lg:flex-row sm:flex-col items-center justify-between mx-auto mb-32">
-                        <div className="lg:mr-80 sm:mr-0 ">
+                        <animated.div className="lg:mr-80 sm:mr-0" style={fadeInPropsLeft}>
                             <Box imageUrl={Image1}></Box>
-                        </div>
+                        </animated.div>
                         <div className='text-container'>
                             <TextCard cardHeader='AEROBICS' cardPara='The high-intesity of multi-joints movements in Crossfit can help you gain muscle strengths and stamina; help you burn calories and manage weight.'
                             ></TextCard>
@@ -46,14 +58,14 @@ export default function Home() {
                         <div className='text-container'>
                             <TextCard cardHeader='YOGA' cardPara='Get flexible, and improve your respiration, energy and over all vitality with our yoga programs tailored to suit your specific needs (beginner, intermediate and expert classes)'></TextCard>
                         </div>
-                        <div className="lg:ml-80 sm:ml-0">
+                        <animated.div className="lg:ml-80 sm:ml-0" style={fadeInPropsRight}>
                             <Box imageUrl={Image5}></Box>
-                        </div>
+                        </animated.div>
                     </div>
                     <div className="flex lg:flex-row sm:flex-col items-center justify-between mx-auto mb-32">
-                        <div className="lg:mr-80 sm:mr-0">
+                        <animated.div className="lg:mr-80 sm:mr-0" style={fadeInPropsLeft}>
                             <Box imageUrl={Image4}></Box>
-                        </div>
+                        </animated.div>
                         <div className='text-container '>
                             <TextCard cardHeader='CROSSFIT' cardPara='The high-intesity of multi-joints movements in Crossfit can help you gain muscle strengths and stamina; help you burn calories and manage weight.' />
                         </div>
@@ -62,14 +74,14 @@ export default function Home() {
                         <div className='text-container '>
                             <TextCard cardHeader='CUPPING THERAPY(HIJAMA)' cardPara='At FLYFITNESS FACTORY, you can enjoy the full benefits of the ancient Chinese treatment that helps with pain relief, chronic fatigue, relief from lung disease, healthy skin, digestive problems among many other benefits.' />
                         </div>
-                        <div className="lg:ml-80 sm:ml-0">
+                        <animated.div className="lg:ml-80 sm:ml-0" style={fadeInPropsRight}>
                             <Box imageUrl={Image6}></Box>
-                        </div>
+                        </animated.div>
                     </div>
                     <div className="flex lg:flex-row sm:flex-col items-center justify-between mx-auto mb-32">
-                        <div className="lg:mr-80 sm:mr-0">
+                        <animated.div className="lg:mr-80 sm:mr-0" style={fadeInPropsLeft}>
                             <Box imageUrl={Image7}></Box>
-                        </div>
+                        </animated.div>
                         <div className='text-container '>
                             <TextCard cardHeader='MASSAGE' cardPara='Our standyby team and equipments helps in reducing muscle soreness, high blood pressure, strees and improve adequate blood circulation, energy and alertness.' />
                         </div>
@@ -78,9 +90,9 @@ export default function Home() {
                         <div className='text-container mr-40'>
                             <TextCard cardHeader='EQUIPMENTS' cardPara='We use standard equipment to ensure that you maximize your potentials.' />
                         </div>
-                        <div className="w-80">
+                        <animated.div className="w-80" style={fadeInPropsRight}>
                             <Box imageUrl={Image8}></Box>
-                        </div>
+                        </animated.div>
                     </div>
                 </div>
                 <div className="pricing-section p-32 flex flex-col items-center justify-between bg-red-50">
