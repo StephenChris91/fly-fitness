@@ -1,19 +1,17 @@
-
-
-.box-right{
-    margin-right: 80px;
+.box-right {
+  margin-right: 80px;
 }
 
-.box-left{
-    margin-left: 80px;
+.box-left {
+  margin-left: 80px;
 }
 
-.pricing-section button{
-    color: #000;
-    background-color: transparent;
-    border: 2px solid orange;
+.pricing-section button {
+  color: #000;
+  background-color: transparent;
+  border: 2px solid orange;
 }
-.pricing-section button:hover{
-    color: #fff;
-    background-color: black;
+.pricing-section button:hover {
+  color: #fff;
+  background-color: black;
 }

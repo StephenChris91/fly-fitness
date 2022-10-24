@@ -4,10 +4,18 @@ import Hero from '../../Components/Hero/Hero'
 import { form, Label, TextInput, Textarea } from 'flowbite-react'
 import Button from '../../Components/Button/Button'
 
+//react-spring
+import { animated, useSpring } from 'react-spring'
+
 //styles
 import './Contact.css'
 
 export default function Contact() {
+
+    const fadeInLeft = useSpring({
+        from: {marginLeft: 100, opacity: 0},
+        to: {marginLeft: 0, opacity: 1}
+    })
     
 
     return (
@@ -19,7 +27,7 @@ export default function Contact() {
 
             <div className='bg-sky-600 mx-auto mt-20 py-40 lg:px-20 sm:px-[15px] lg:w-[1200px] sm:[500px]'>
             <h1 className='font-bold text-center text-white text-4xl mb-10'>GET STARTED TODAY.</h1>
-            <form className="flex flex-col gap-4">
+            <animated.form className="flex flex-col gap-4" style={fadeInLeft}>
                 <div>
                     <div className="mb-2 block">
                     <Label
@@ -100,7 +108,7 @@ export default function Contact() {
                 <Button width='full' padding='5' bgColor='gray-900' color='white' hover='green-800' type="submit" >
                         SEND
                 </Button>
-                </form>
+                </animated.form>
             </div>
         </>
     )
