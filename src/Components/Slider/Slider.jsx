@@ -1,8 +1,12 @@
 
 
 
+import { Link } from 'react-router-dom'
+
+
 //icons
 import { HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi'
+import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa'
 
 //slider 
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
@@ -24,40 +28,49 @@ export default function Slider({imageUrl}) {
     
 const allStaff = [ 
     {
-    id: 1,
-    photo: Manager1,
-    name: "Yusuf Balikis O",
-    email: 'omidan@flyfitnessfactory.com',
-    role:"Auditor General"
+        id: 5,
+        name: "Bolarinwa Kashif O.",
+        role:"Founder & CEO",
+        email: 'mistarfly@flyfitnessfactory.com ',
+        photo: Manager5,
+        instagram: 'https://instagram.com/mistarfly?igshid=YmMyMTA2M2Y=',
+        twitter: 'https://twitter.com/mistarfly?s=21&t=l1L5ef8ao6eJzj9gk8IO7w',
+        facebook: 'https://www.facebook.com/mistarflyy'
     },
     {
     id: 2,
     photo: Manager2,
     name: "Akanni Grace O.",
     email: 'omotara@flyfitnessfactory.com',
-    role:"Co-Founder & Executive Director"
-    },
-    {
-    id: 3,
-    photo: Manager3,
-    name: "Olokede Oluwatobi Samuel",
-    email: 'oluwatobi@flyfitnessfactory.com',
-    role:"Supervisor"
+    role:"Co-Founder & Executive Director",
+    instagram: 'https://instagram.com/theladymotara?igshid=YmMyMTA2M2Y=',
+    twitter: 'https://twitter.com/_theladymo?s=21&t=TlLs-OSHUC4x3cU0yfaIFw',
+    facebook: 'https://www.facebook.com/profile.php?id=100059488473839'
     },
     {
     id: 4,
     name: "Bolarinwa Haishah O",
     role:"Executive Board Member",
     email: 'nana@flyfitnessfactory.com',
-    photo: Manager4
+    photo: Manager4,
+    facebook: 'https://www.facebook.com/haishah.badmus'
     },
     {
-    id: 5,
-    name: "Bolarinwa Kashif O.",
-    role:"Founder & CEO",
-    email: 'mistarfly@flyfitnessfactory.com ',
-    photo: Manager5
-    }
+    id: 1,
+    photo: Manager1,
+    name: "Yusuf Balikis O",
+    email: 'omidan@flyfitnessfactory.com',
+    role:"Auditor General",
+    },
+    {
+    id: 3,
+    photo: Manager3,
+    name: "Olokede Oluwatobi Samuel",
+    email: 'oluwatobi@flyfitnessfactory.com',
+    role:"Supervisor",
+    },
+    
+    
     ]
     
 
@@ -69,12 +82,35 @@ const allStaff = [
                         <img src={staff.photo} alt={staff.name}/>
                         <h4 className='font-bold text-lg'>{staff.name}</h4>
                         <p className='font-normal'>{staff.role}</p>
+                        <div className='flex items-start justify-start'>
+                            {
+                                staff.facebook ?
+                                <a href={`${staff.facebook}`} target='_blank' rel='noreferrer'>
+                                    <FaFacebookSquare className='text-2xl text-blue-700'/>
+                                </a> :
+                                ''
+                            }
+                            {
+                                staff.instagram ?
+                                <a href={`${staff.instagram}`} target='_blank' rel='noreferrer'>
+                                    <FaInstagramSquare className='text-2xl text-blue-700'/>
+                                </a> :
+                                ''
+                            }
+                            {
+                                staff.twitter ?
+                                <a href={`${staff.twitter}`} target='_blank' rel='noreferrer'>
+                                    <FaTwitterSquare className='text-2xl text-blue-700'/>
+                                </a> :
+                                ''
+                            }                        
+                        </div>
                     </SplideSlide>
                 ))}
                 
             </SplideTrack>
 
-            <div className="splide__arrows absolute right-2 lg:top-72 sm:top-60">
+            <div className="splide__arrows absolute right-2 lg:top-58 sm:top-60">
                 <button className="splide__arrow splide__arrow--prev"><HiArrowNarrowLeft /></button>
                 <button className="splide__arrow splide__arrow--next"><HiArrowNarrowRight /></button>
             </div>

@@ -12,7 +12,7 @@ export default function Box({imageUrl}) {
         <div className='outer-box mx-auto' >
             <div className='inner-box relative mx-auto'>
                 <div className='box-image'>
-                    <img src={imageUrl} alt="" className='m-5 sm:w-[200px] lg:w-[500px]' />
+                    <img src={imageUrl} alt="" className='lg:m-10 sm:m-5 sm:w-[300px] lg:w-[500px]' />
                 </div>
             </div>
         </div>
