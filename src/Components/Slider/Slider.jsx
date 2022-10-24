@@ -1,9 +1,5 @@
 
 
-
-import { Link } from 'react-router-dom'
-
-
 //icons
 import { HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi'
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa'
