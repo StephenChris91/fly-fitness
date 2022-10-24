@@ -47,7 +47,7 @@ export default function Home() {
                 mainText="WITH FLY FITNESS FACTORY  YOUR RESULTS JUST GOT EASIER" lowerText="You do the work, we guide you, support you, and help you attain your goals"
             />
             <div className="pt-20">
-                <div className="mx-auto flex flex-col lg:items-center sm:items-center lg:justify-between sm:justify-between lg:w-[1200px] sm:w-[500px] sm:p-5">
+                <div className="mx-auto flex flex-col lg:items-center sm:items-center lg:justify-between sm:justify-between lg:w-[1200px] sm:w-[300px] sm:p-5">
                     <h1 className="lg:text-4xl sm:text-2xl mb-20 lg:text-center sm:text-center mx-auto font-bold">OUR TRAINING PROGRAMS</h1>
                     <div className="flex lg:flex-row sm:flex-col items-center justify-between mx-auto lg:mb-32 sm:mb-10">
                         <animated.div className="lg:mr-80 sm:mr-[20px] lg:mb-0 sm:mb-12 lg:w-none sm:w-full" style={fadeInPropsLeft}>
