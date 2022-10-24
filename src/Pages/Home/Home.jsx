@@ -47,10 +47,10 @@ export default function Home() {
                 mainText="WITH FLY FITNESS FACTORY  YOUR RESULTS JUST GOT EASIER" lowerText="You do the work, we guide you, support you, and help you attain your goals"
             />
             <div className="pt-20">
-                <div className="mx-auto flex flex-col lg:items-center sm:items-center lg:justify-between sm:justify-between lg:w-[1200px] sm:w-[300px] sm:p-5">
+                <div className="mx-auto flex flex-col lg:items-center sm:items-center lg:justify-between sm:justify-between lg:w-[1200px] sm:w-[300px] sm:p-0">
                     <h1 className="lg:text-4xl sm:text-2xl mb-20 lg:text-center sm:text-center mx-auto font-bold">OUR TRAINING PROGRAMS</h1>
-                    <div className="flex lg:flex-row sm:flex-col items-center justify-between mx-auto lg:mb-32 sm:mb-10">
-                        <animated.div className="lg:mr-80 sm:mr-[20px] lg:mb-0 sm:mb-12 lg:w-none sm:w-full" style={fadeInPropsLeft}>
+                    <div className="flex lg:flex-row sm:flex-col lg:items-center sm:items-start justify-between mx-auto lg:mb-32 sm:mb-10">
+                        <animated.div className="lg:mr-80 sm:mr-[50px] lg:mb-0 sm:mb-5 lg:w-none sm:w-full" style={fadeInPropsLeft}>
                             <Box imageUrl={Image1}></Box>
                         </animated.div>
                         <div className='text-container'>
@@ -62,12 +62,12 @@ export default function Home() {
                         <div className='text-container'>
                             <TextCard cardHeader='YOGA' cardPara='Get flexible, and improve your respiration, energy and over all vitality with our yoga programs tailored to suit your specific needs (beginner, intermediate and expert classes)'></TextCard>
                         </div>
-                        <animated.div className="lg:ml-80 sm:ml-[-50px] lg:mb-0 sm:mb-12 lg:w-none sm:w-full" style={fadeInPropsRight}>
+                        <animated.div className="lg:ml-80 sm:ml-[-30px] lg:mb-0 sm:mb-5 lg:w-none sm:w-full" style={fadeInPropsRight}>
                             <Box imageUrl={Image5}></Box>
                         </animated.div>
                     </div>
                     <div className="flex lg:flex-row sm:flex-col items-center justify-between mx-auto lg:mb-32 sm:mb-10">
-                        <animated.div className="lg:mr-80 sm:mr-[20px] lg:mb-0 sm:mb-12 lg:w-none sm:w-full" style={fadeInPropsLeft}>
+                        <animated.div className="lg:mr-80 sm:mr-[20px] lg:mb-0 sm:mb-5 lg:w-none sm:w-full" style={fadeInPropsLeft}>
                             <Box imageUrl={Image4}></Box>
                         </animated.div>
                         <div className='text-container '>
@@ -78,12 +78,12 @@ export default function Home() {
                         <div className='text-container '>
                             <TextCard cardHeader='CUPPING THERAPY(HIJAMA)' cardPara='At FLYFITNESS FACTORY, you can enjoy the full benefits of the ancient Chinese treatment that helps with pain relief, chronic fatigue, relief from lung disease, healthy skin, digestive problems among many other benefits.' />
                         </div>
-                        <animated.div className="lg:ml-80 sm:ml-[-50px] lg:mb-0 sm:mb-12 lg:w-none sm:w-full" style={fadeInPropsRight}>
+                        <animated.div className="lg:ml-80 sm:ml-[-50px] lg:mb-0 sm:mb-5 lg:w-none sm:w-full" style={fadeInPropsRight}>
                             <Box imageUrl={Image6}></Box>
                         </animated.div>
                     </div>
                     <div className="flex lg:flex-row sm:flex-col items-center justify-between mx-auto lg:mb-32 sm:mb-10">
-                        <animated.div className="lg:mr-80 sm:mr-[20px] lg:mb-0 sm:mb-12 lg:w-none sm:w-full" style={fadeInPropsLeft}>
+                        <animated.div className="lg:mr-80 sm:mr-[20px] lg:mb-0 sm:mb-5 lg:w-none sm:w-full" style={fadeInPropsLeft}>
                             <Box imageUrl={Image7}></Box>
                         </animated.div>
                         <div className='text-container lg:mr-0 sm:mr-[0px]'>
@@ -94,7 +94,7 @@ export default function Home() {
                         <div className='text-container'>
                             <TextCard cardHeader='EQUIPMENTS' cardPara='We use standard equipment to ensure that you maximize your potentials.' />
                         </div>
-                        <animated.div className=" lg:ml-80 sm:ml-[-50px] lg:mb-0 sm:mb-12 lg:w-none sm:w-full" style={fadeInPropsRight}>
+                        <animated.div className=" lg:ml-80 sm:ml-[-50px] lg:mb-0 sm:mb-5 lg:w-none sm:w-full" style={fadeInPropsRight}>
                             <Box imageUrl={Image8}></Box>
                         </animated.div>
                     </div>

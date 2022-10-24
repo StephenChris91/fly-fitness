@@ -72,13 +72,13 @@ export default function About() {
                     <h1 className='font-bold text-2xl mb-2'>We are all about</h1>
                     <div>
                         <div className='flex flex-col justify-evenly gap-3'>
-                            <p>Personalized Training Programs.</p>
-                            <p>On-going wellness management</p>
-                            <p>Supportive community/Group training session.</p>
-                            <p>Recreational actvities (playstation, table tennis, dart, ludo games and more)</p>
-                            <p>Wide range of Programs.</p>
-                            <p>Online training session</p>
-                            <p>Nutritional guide and diet plan.</p>
+                            <p className='font-bold text-lg'>Personalized Training Programs.</p>
+                            <p className='font-bold text-lg'>On-going wellness management</p>
+                            <p className='font-bold text-lg'>Supportive community/Group training session.</p>
+                            <p className='font-bold text-lg'>Recreational actvities (playstation, table tennis, dart, ludo games and more)</p>
+                            <p className='font-bold text-lg'>Wide range of Programs.</p>
+                            <p className='font-bold text-lg'>Online training session</p>
+                            <p className='font-bold text-lg'>Nutritional guide and diet plan.</p>
                         </div>
                         <div className="empty"></div>
                     </div>
@@ -110,18 +110,18 @@ export default function About() {
                             <Box imageUrl={Image2}></Box>
                         </div>
                         <div className='text-container'>
-                            <TextCard cardHeader='OUR MISSION'  cardPara='The traits or qualities that we consider not just worthwhile
+                            <TextCard cardHeader='OUR VISION'  cardPara='The traits or qualities that we consider not just worthwhile
                             they represent for us as an organization. The highest priorities deeply held beliefs, core, fundamental driving forces' cardPara2='They are at the heart of what Fly Fitness Factory and it’s
                             employees stands for:'/>
                             {valuesList.map(list => (
-                                <ul key={list.idx}>
-                                    <li >{list.txt}</li>
+                                <ul  key={list.idx}>
+                                    <li className='font-bold'>{list.txt}</li>
                                 </ul>
                             ))}
                         </div>
                     </div>
                     <div className="flex items-center justify-between mx-auto lg:mb-32 sm:mb-5 lg:flex-row sm:flex-col-reverse">
-                        <div className='text-container'>
+                        <div className='text-container lg:w-0 sm:w-[300px]'>
                             <TextCard cardHeader='CORE VALUES' />
                             {goalsLists.map(list => (
                                 <ul key={list.idx}>
@@ -134,13 +134,11 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="cta mb-10">
-                    <h1 className="font-bold text-3xl lg:text-center sm:text-start  mb-5">Happiness at your reach</h1>
+                <div className="mb-10">
+                    <h1 className="font-bold text-3xl lg:text-center sm:text-start mb-5">Happiness at your reach</h1>
                     <p className='mb-4'>Fly Fitness Factory operates and manages fitness facilities beyond the idea of a simple gym, it is geared towards enabling your happiness.</p>
 
-                    <p className='mb-4'>Since launching of its first branch on the 1st of December, 2021 it has postioned itself to cater to the country’s growing fitness community. In
-                    addition, to providing excellent and effecient fitness services, it also geared towards contributing to the economic development of Nigeria and the 
-                    world in general</p>
+                    <p className='mb-4'>Since launching of its first branch on the 1st of December, 2021 it has postioned itself to cater to the country’s growing fitness community. In addition, to providing excellent and effecient fitness services, it also geared towards contributing to the economic development of Nigeria and the world in general</p>
 
                     <p className='mb-4'>We are a physical fitness centre where we train, coach, help and push people to attain healthy lifestyle, a more balance and Fit body. 
                     Fly Fitness Factory is where lifestyle are changed for the better.</p>
