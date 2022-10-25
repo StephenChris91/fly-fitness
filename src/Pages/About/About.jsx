@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '../../Components/Hero/Hero'
 import Box from '../../Components/Box/Box'
 import TextCard from '../../Components/TextCard/TextCard'
@@ -84,7 +83,7 @@ export default function About() {
                     </div>
                     
                 </div>
-                <div className='lg:w-[1200px] sm:w-[400px] flex flex-col items-center justify-between lg:p-0 sm:p-3'>
+                <div className='lg:w-[1200px] sm:w-[400px] flex flex-col items-center justify-between lg:p-0 sm:p-[14px]'>
                     <div className="flex items-center justify-between mx-auto lg:mb-32 sm:mb-5 lg:flex-row sm:flex-col">
                         <div className="lg:mr-80 sm:mr-0 lg:mb-0 sm:mb-3">
                             <Box imageUrl={Image2} ></Box>
@@ -121,7 +120,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className="flex items-center justify-between mx-auto lg:mb-32 sm:mb-5 lg:flex-row sm:flex-col-reverse">
-                        <div className='text-container lg:w-0 sm:w-[300px]'>
+                        <div className='text-container lg:w-[1000px] sm:w-[300px]'>
                             <TextCard cardHeader='CORE VALUES' />
                             {goalsLists.map(list => (
                                 <ul key={list.idx}>
@@ -129,7 +128,7 @@ export default function About() {
                                 </ul>
                             ))}
                         </div>
-                        <div className="lg:ml-[600px] sm:ml-0 lg:mb-0 sm:mb-3">
+                        <div className="lg:ml-[80px] sm:ml-0 lg:mb-0 sm:mb-3">
                             <Box imageUrl={Image1}></Box>
                         </div>
                     </div>
