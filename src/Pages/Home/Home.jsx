@@ -5,9 +5,10 @@ import { useNavigate } from 'react-router-dom'
 import Hero from '../../Components/Hero/Hero'
 import Box from '../../Components/Box/Box'
 import TextCard from '../../Components/TextCard/TextCard'
-import { Button } from 'flowbite-react'
+import { Button } from 'react-bootstrap'
 import Slider from '../../Components/Slider/Slider'
 import Testimonial from '../../Components/Testimonial/Testimonial'
+import EquipmentSlider from '../../Components/Slider/EquipmentSlider'
 
 
 //react-spring
@@ -94,15 +95,15 @@ export default function Home() {
                         <div className='text-container'>
                             <TextCard cardHeader='EQUIPMENTS' cardPara='We use standard equipment to ensure that you maximize your potentials.' />
                         </div>
-                        <animated.div className=" lg:ml-80 sm:ml-[-50px] lg:mb-0 sm:mb-5 lg:w-none sm:w-full" style={fadeInPropsRight}>
-                            <Box imageUrl={Image8}></Box>
-                        </animated.div>
+                        <div className=" lg:ml-[400px] sm:ml-[-50px] lg:mb-0 sm:mb-5 lg:w-none sm:w-full">
+                            <EquipmentSlider />
+                        </div>
                     </div>
                 </div>
                 <div className="pricing-section p-32 flex flex-col items-center justify-between bg-red-50">
                     <h2 className="lg:text-5xl sm:text-2xl font-bold text-center text-gray-900 mb-10">MEMBERSHIP PLAN OPTIONS</h2>
                     <p className='font-normal text-center text-gray-700 mb-5'>Our certified trainers are here to help you get fit and into shape</p>
-                    <Button className="bg-white" id='pricing-btn' onClick={() => navigate('/equipments')}>VIEW OPTIONS</Button>
+                    <Button variant='outline-warning' onClick={() => navigate('/equipments')}>VIEW OPTIONS</Button>
                 </div>
                 <div className="flex lg:flex-row sm:flex-col items-center lg:justify-between sm:justify-center lg:mx-0 sm:mx-auto lg:py-20 sm:py-20 lg:px-64 sm:px-10 bg-gray-200">
                     <h1 className="text-4xl font-bold text-center lg:mt-22 sm:mt-0 lg:mb-0 sm:mb-10">Meet Our Team</h1>

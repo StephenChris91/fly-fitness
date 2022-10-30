@@ -5,9 +5,10 @@
 
 .logo{
     width: 100px;
+    height: 250px
 }
 #navbar{
-    background-color: #0284c7;
+    background-color: #0284c7 !important;
 }
 
 #menu-btn{

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 
-import {Container} from 'react-bootstrap'
-import {Button} from 'flowbite-react'
+import { Container, Button } from 'react-bootstrap'
+//import Buttons from '../Button/Button'
 
 //react-spring
 import {animated, useSpring} from 'react-spring'
@@ -27,10 +27,12 @@ export default function Hero({ upperText, mainText, lowerText }) {
         <>
             <Container fluid className="hero-container flex flex-col text-center px-5 py-20">
                 <animated.h4 className="text-xl text-white mb-20" style={fadeInLeft}>{upperText}</animated.h4>
-                <animated.h1 className="text-6xl text-white mb-20 font-extrabold" style={fadeInTop}>{mainText}</animated.h1>
+                <animated.h1 className="text-4xl lg:text-6xl lg:w-[1200px] lg:mx-auto lg:text-center text-white mb-20 font-extrabold" style={fadeInTop}>{mainText}</animated.h1>
                 <animated.h4 className="text-white mb-5" style={fadeInLeft}>{lowerText}</animated.h4>
                 <animated.div className='flex flex-col items-centre justify-center mx-auto' style={fadeInTop}>
-                    <Button className='bg-border-lined' id='hero-btn' onClick={() => navigate('/equipments')}>VIEW DETAILS</Button>
+                    <Button variant='outline-warning'  >
+                        VIEW DETAILS
+                    </Button>
                 </animated.div>
             </Container>
         </>

@@ -1,8 +1,11 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Button } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
-import {Button} from 'flowbite-react'
+import {} from 'flowbite-react'
 import { Navbar } from 'flowbite-react'
+
+//helpers
+import { useNavigate } from 'react-router-dom'
 
 //styles
 import './navbar.css'
@@ -12,59 +15,57 @@ import Logo from '../../Images/logoWhite.png'
 
 export default function Navigation() {
     
+    const navigate = useNavigate()
 
     return (
-        <>
-            <Container fluid className=' bg-sky-600 p-5'>
-                <Navbar
-                fluid={true}
-                rounded={true}
-                id='navbar'
-                >
-                <Navbar.Brand href="/">
+        <div className='bg-sky-600 px-10 mx-auto'>
+            <Navbar
+            fluid={true}
+            rounded={true}
+            className='bg-sky-500'
+            id='navbar'
+            >
+            <div>
+                <NavLink to="/" >
                     <img
                     src={Logo}
-                    className="mr-3 h-30 sm:h-9 logo"
-                    alt="Logo"
+                    className="mr-3 h-6 sm:h-9"
+                    alt=" Logo"
                     />
-                </Navbar.Brand>
-                <div className="flex md:order-2">
-                    <Navbar.Toggle />
-                    <NavLink to='/signup'>
-                        <Button className='bg-border-lined ml-auto' id='menu-btn'>
-                            Register
-                        </Button>
-                    </NavLink>
-                </div>
-                <Navbar.Collapse>
-                    <NavLink
-                    to="/"
-                    className='text-white font-bold'
-                    >
-                    Home
-                    </NavLink>
-                    <NavLink to="/about" className='text-white font-bold'>
-                    About
-                    </NavLink>
-                    <NavLink to="/equipments" className='text-white font-bold'>
-                    Memberships
-                    </NavLink>
-                    <NavLink to="/shop" className='text-white font-bold'>
-                    Shop
-                    </NavLink>
-                    <NavLink to="/staff" className='text-white font-bold'>
-                    Staff
-                    </NavLink>
-                    <NavLink to="/contact" className='text-white font-bold'>
-                    Contact
-                    </NavLink>
-                    
-                </Navbar.Collapse>
-               
-            </Navbar>
-            </Container>
-
+                </NavLink>
+            </div>
             
-        </>
+            <div className="flex md:order-2">
+                <NavLink to='/signup'>
+                    <Button variant='outline-warning' className='' onClick={() => navigate('/signup')}>
+                        Get started
+                    </Button>
+                </NavLink>
+                <Navbar.Toggle />
+            </div>
+            <Navbar.Collapse className='text-white'>
+                <NavLink 
+                to='/'
+                active={true}
+                className='text-white hover:text-yellow-500'
+                >
+                    Home
+                </NavLink>
+                <NavLink to="/about" className='text-white hover:text-yellow-500'>
+                    About
+                </NavLink>
+                <NavLink to="/equipment" className='text-white hover:text-yellow-500'>
+                    Membership
+                </NavLink>
+                <NavLink to="/shop" className='text-white hover:text-yellow-500'>
+                    Shop
+                </NavLink>
+                <NavLink to="/staff" className='text-white hover:text-yellow-500'>
+                    Contact
+                </NavLink>
+            </Navbar.Collapse>
+            </Navbar>
+    
+        </div>
     )
 }

@@ -71,7 +71,7 @@ const allStaff = [
     
 
     return (
-        <Splide hasTrack={ false } aria-label="..." className='lg:w-60 sm:w-60 lg:ml-0 sm:ml-0 relative'>
+        <Splide hasTrack={ false } aria-label="..." className='lg:w-[500px] sm:w-60 lg:ml-0 sm:ml-0 relative'>
             <SplideTrack>
                 {allStaff.map(staff => (
                     <SplideSlide key={staff.id}>
@@ -106,9 +106,9 @@ const allStaff = [
                 
             </SplideTrack>
 
-            <div className="splide__arrows absolute right-2 lg:top-58 sm:top-60">
-                <button className="splide__arrow splide__arrow--prev"><HiArrowNarrowLeft /></button>
-                <button className="splide__arrow splide__arrow--next"><HiArrowNarrowRight /></button>
+            <div className="flex justify-between splide__arrows absolute right-2 lg:top-[500px] sm:top-60 z-10">
+                <button className="splide__arrow splide__arrow--prev bg-transparent "><HiArrowNarrowLeft /></button>
+                <button className="splide__arrow splide__arrow--next bg-transparent "><HiArrowNarrowRight /></button>
             </div>
             
         </Splide>
