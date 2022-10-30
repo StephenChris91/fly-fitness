@@ -30,7 +30,7 @@ export default function Hero({ upperText, mainText, lowerText }) {
                 <animated.h1 className="text-4xl lg:text-6xl lg:w-[1200px] lg:mx-auto lg:text-center text-white mb-20 font-extrabold" style={fadeInTop}>{mainText}</animated.h1>
                 <animated.h4 className="text-white mb-5" style={fadeInLeft}>{lowerText}</animated.h4>
                 <animated.div className='flex flex-col items-centre justify-center mx-auto' style={fadeInTop}>
-                    <Button variant='outline-warning'  >
+                    <Button variant='outline-warning'  onClick={() => navigate('/equipments')}>
                         VIEW DETAILS
                     </Button>
                 </animated.div>

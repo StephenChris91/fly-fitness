@@ -26,7 +26,7 @@ export default function Navigation() {
             id='navbar'
             >
             <div>
-                <NavLink to="/" >
+                <NavLink to="/">
                     <img
                     src={Logo}
                     className="mr-3 h-6 sm:h-9"
@@ -54,8 +54,11 @@ export default function Navigation() {
                 <NavLink to="/about" className='text-white hover:text-yellow-500'>
                     About
                 </NavLink>
-                <NavLink to="/equipment" className='text-white hover:text-yellow-500'>
+                <NavLink to="/equipments" className='text-white hover:text-yellow-500'>
                     Membership
+                </NavLink>
+                <NavLink to="/staff" className='text-white hover:text-yellow-500'>
+                    Staff
                 </NavLink>
                 <NavLink to="/shop" className='text-white hover:text-yellow-500'>
                     Shop

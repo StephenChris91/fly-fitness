@@ -1,9 +1,8 @@
 import React from 'react'
 
 //components
-import Hero from '../../Components/Hero/Hero'
 import { form, Label, TextInput, Textarea, Checkbox} from 'flowbite-react'
-import Button from '../../Components/Button/Button'
+import {Button} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 
 //styles
@@ -129,7 +128,7 @@ export default function Login() {
                             Privacy Policy </strong></span>
                         </div>
                     </div>
-                    <Button width='full' padding='5' bgColor='gray-900' color='white' hover='green-800' type="submit" >
+                    <Button variant='dark' size='lg' type="submit" style={{ width: '100%' }} >
                         SEND
                     </Button>
                 </div>
@@ -138,7 +137,7 @@ export default function Login() {
                 <div className='text-white mt-10'>
                     <p>Already have an account?{' '}
                         <strong>
-                            <NavLink to='/login'>
+                            <NavLink to='/login' className='text-white'>
                                 LOGIN 
                             </NavLink>
                         </strong>

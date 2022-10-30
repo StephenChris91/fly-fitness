@@ -2,6 +2,7 @@ import Hero from '../../Components/Hero/Hero'
 import Box from '../../Components/Box/Box'
 import TextCard from '../../Components/TextCard/TextCard'
 import Testimonial from '../../Components/Testimonial/Testimonial'
+import { ListGroup } from 'react-bootstrap'
 
 
 //styles
@@ -10,6 +11,8 @@ import './About.css'
 //Images
 import Image1 from '../../Images/gym-3.jpg'
 import Image2 from '../../Images/exercise-3.jpg'
+import Image3 from '../../Images/exercise-1.jpg'
+import Image4 from '../../Images/gym-2.jpg'
 
 
 
@@ -70,15 +73,15 @@ export default function About() {
                 <div className='benefits mb-20'>
                     <h1 className='font-bold text-2xl mb-2'>We are all about</h1>
                     <div>
-                        <div className='flex flex-col justify-evenly gap-3'>
-                            <p className='font-bold text-lg'>Personalized Training Programs.</p>
-                            <p className='font-bold text-lg'>On-going wellness management</p>
-                            <p className='font-bold text-lg'>Supportive community/Group training session.</p>
-                            <p className='font-bold text-lg'>Recreational actvities (playstation, table tennis, dart, ludo games and more)</p>
-                            <p className='font-bold text-lg'>Wide range of Programs.</p>
-                            <p className='font-bold text-lg'>Online training session</p>
-                            <p className='font-bold text-lg'>Nutritional guide and diet plan.</p>
-                        </div>
+                        <ListGroup as='ol' numbered className='flex flex-col justify-evenly'>
+                            <ListGroup.Item as='li' className='font-bold text-lg'>Personalized Training Programs.</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg'>On-going wellness management</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg'>Supportive community/Group training session.</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg'>Recreational actvities (playstation, table tennis, dart, ludo games and more)</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg'>Wide range of Programs.</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg'>Online training session</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg'>Nutritional guide and diet plan.</ListGroup.Item>
+                        </ListGroup>
                         <div className="empty"></div>
                     </div>
                     
@@ -106,30 +109,36 @@ export default function About() {
                     </div>
                     <div className="flex items-center justify-between mx-auto lg:mb-32 sm:mb-5 lg:flex-row sm:flex-col">
                         <div className="lg:mr-80 sm:mr-0 lg:mb-0 sm:mb-3">
-                            <Box imageUrl={Image2}></Box>
+                            <Box imageUrl={Image4}></Box>
                         </div>
                         <div className='text-container'>
-                            <TextCard cardHeader='OUR VISION'  cardPara='The traits or qualities that we consider not just worthwhile
+                            <TextCard cardHeader='CORE VALUES'  cardPara='The traits or qualities that we consider not just worthwhile
                             they represent for us as an organization. The highest priorities deeply held beliefs, core, fundamental driving forces' cardPara2='They are at the heart of what Fly Fitness Factory and it’s
                             employees stands for:'/>
                             {valuesList.map(list => (
-                                <ul  key={list.idx}>
-                                    <li className='font-bold'>{list.txt}</li>
-                                </ul>
+                                <ListGroup as='ol' numbered className='flex justify-evenly'>
+                                    <ListGroup.Item as='li' key={list.idx}>
+                                        <li className='flex justify-between font-bold'>{list.txt}</li>
+                                    </ListGroup.Item>
+                                </ListGroup>
+                                
                             ))}
                         </div>
                     </div>
                     <div className="flex items-center justify-between mx-auto lg:mb-32 sm:mb-5 lg:flex-row sm:flex-col-reverse">
                         <div className='text-container lg:w-[1000px] sm:w-[300px]'>
-                            <TextCard cardHeader='CORE VALUES' />
+                            <TextCard cardHeader='OUR GOALS' />
                             {goalsLists.map(list => (
-                                <ul key={list.idx}>
-                                    <li >{list.txt}</li>
-                                </ul>
+                                <ListGroup as='ol' numbered className='flex  justify-evenly'>
+                                    <ListGroup.Item as='li' key={list.idx}>
+                                        <li >{list.txt}</li>
+                                    </ListGroup.Item>
+                                </ListGroup>
+                                
                             ))}
                         </div>
                         <div className="lg:ml-[80px] sm:ml-0 lg:mb-0 sm:mb-3">
-                            <Box imageUrl={Image1}></Box>
+                            <Box imageUrl={Image3}></Box>
                         </div>
                     </div>
                 </div>

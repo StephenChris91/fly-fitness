@@ -2,7 +2,7 @@
 //components
 import { form, Label, TextInput } from 'flowbite-react'
 import { NavLink } from 'react-router-dom'
-import Button from '../../Components/Button/Button'
+import {Button} from 'react-bootstrap'
 
 //styles
 import './Login.css'
@@ -53,7 +53,7 @@ export default function Login() {
                     />
                 </div>
                 <div>
-                    <Button width='full' padding='5' bgColor='gray-900' color='white' type="submit" >
+                    <Button variant='dark' size='lg' type="submit" style={{ width: '100%' }}>
                         SEND
                     </Button>
                 </div>
@@ -61,7 +61,7 @@ export default function Login() {
                 <div className='text-white mt-10'>
                     <p>Already have an account?{' '}
                         <strong>
-                            <NavLink to='/signup'>
+                            <NavLink to='/signup' className='text-white'>
                                 SIGN UP
                             </NavLink>
                         </strong>

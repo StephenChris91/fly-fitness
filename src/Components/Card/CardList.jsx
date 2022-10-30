@@ -46,7 +46,7 @@ export default function CardList  () {
         },
         {
         id: 5,
-        name: 'Swaet shirt',
+        name: 'Sweat shirt',
         image: Product5,
         price: 8000
         },

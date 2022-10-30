@@ -1,4 +1,6 @@
-import { Card, Button } from 'flowbite-react'
+import { Card } from 'flowbite-react'
+import { Button } from 'react-bootstrap'
+import  { useNavigate } from 'react-router-dom'
 
 
 //images
@@ -8,7 +10,7 @@ import './Card.css'
 
 export default function SingleCard({imageUrl, productName, productPrice}) {
 
-   
+   const navigate = useNavigate()
     
 
     return (
@@ -24,7 +26,7 @@ export default function SingleCard({imageUrl, productName, productPrice}) {
                     {productPrice}
                 </p>
                 <div className='flex items-center justify-center mx-auto'>
-                    <Button id='card-btn'>Place Order</Button>
+                    <Button variant='outline-warning' onClick={() => navigate('/contact')}>Place Order</Button>
                 </div>
             </Card>
         </div>
