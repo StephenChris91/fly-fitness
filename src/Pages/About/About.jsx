@@ -74,13 +74,13 @@ export default function About() {
                     <h1 className='font-bold text-2xl mb-2'>We are all about</h1>
                     <div>
                         <ListGroup as='ol' numbered className='flex flex-col justify-evenly'>
-                            <ListGroup.Item as='li' className='font-bold text-lg'>Personalized Training Programs.</ListGroup.Item>
-                            <ListGroup.Item as='li' className='font-bold text-lg'>On-going wellness management</ListGroup.Item>
-                            <ListGroup.Item as='li' className='font-bold text-lg'>Supportive community/Group training session.</ListGroup.Item>
-                            <ListGroup.Item as='li' className='font-bold text-lg'>Recreational actvities (playstation, table tennis, dart, ludo games and more)</ListGroup.Item>
-                            <ListGroup.Item as='li' className='font-bold text-lg'>Wide range of Programs.</ListGroup.Item>
-                            <ListGroup.Item as='li' className='font-bold text-lg'>Online training session</ListGroup.Item>
-                            <ListGroup.Item as='li' className='font-bold text-lg'>Nutritional guide and diet plan.</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg mb-2'>Personalized Training Programs.</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg mb-2'>On-going wellness management</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg mb-2'>Supportive community/Group training session.</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg mb-2'>Recreational actvities (playstation, table tennis, dart, ludo games and more)</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg mb-2'>Wide range of Programs.</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg mb-2'>Online training session</ListGroup.Item>
+                            <ListGroup.Item as='li' className='font-bold text-lg mb-2'>Nutritional guide and diet plan.</ListGroup.Item>
                         </ListGroup>
                         <div className="empty"></div>
                     </div>
@@ -116,8 +116,8 @@ export default function About() {
                             they represent for us as an organization. The highest priorities deeply held beliefs, core, fundamental driving forces' cardPara2='They are at the heart of what Fly Fitness Factory and it’s
                             employees stands for:'/>
                             {valuesList.map(list => (
-                                <ListGroup as='ol' numbered className='flex justify-evenly'>
-                                    <ListGroup.Item as='li' key={list.idx}>
+                                <ListGroup as='ol' className='flex justify-evenly'>
+                                    <ListGroup.Item as='li' key={list.idx} className='mb-2'>
                                         <li className='flex justify-between font-bold'>{list.txt}</li>
                                     </ListGroup.Item>
                                 </ListGroup>
@@ -129,9 +129,9 @@ export default function About() {
                         <div className='text-container lg:w-[1000px] sm:w-[300px]'>
                             <TextCard cardHeader='OUR GOALS' />
                             {goalsLists.map(list => (
-                                <ListGroup as='ol' numbered className='flex  justify-evenly'>
-                                    <ListGroup.Item as='li' key={list.idx}>
-                                        <li >{list.txt}</li>
+                                <ListGroup as='ol' className='flex justify-evenly'>
+                                    <ListGroup.Item as='li' key={list.idx} className='mb-2'>
+                                        <li>{list.txt}</li>
                                     </ListGroup.Item>
                                 </ListGroup>
                                 

@@ -18,18 +18,18 @@ export default function Navigation() {
     const navigate = useNavigate()
 
     return (
-        <div className='bg-sky-600 px-10 mx-auto'>
+        <div className='bg-sky-600 px-10 mx-auto h-20'>
             <Navbar
             fluid={true}
             rounded={true}
-            className='bg-sky-500'
+            className='bg-sky-500 '
             id='navbar'
             >
             <div>
                 <NavLink to="/">
                     <img
                     src={Logo}
-                    className="mr-3 h-6 sm:h-9"
+                    className="mr-3 w-[150px] logo"
                     alt=" Logo"
                     />
                 </NavLink>
@@ -37,8 +37,8 @@ export default function Navigation() {
             
             <div className="flex md:order-2">
                 <NavLink to='/signup'>
-                    <Button variant='outline-warning' className='' onClick={() => navigate('/signup')}>
-                        Get started
+                    <Button variant='outline-warning' className='mr-5' onClick={() => navigate('/signup')}>
+                        GET STARTED
                     </Button>
                 </NavLink>
                 <Navbar.Toggle />
@@ -46,24 +46,23 @@ export default function Navigation() {
             <Navbar.Collapse className='text-white'>
                 <NavLink 
                 to='/'
-                active={true}
-                className='text-white hover:text-yellow-500'
+                className='text-white hover:text-yellow-500 no-underline'
                 >
                     Home
                 </NavLink>
-                <NavLink to="/about" className='text-white hover:text-yellow-500'>
+                <NavLink to="/about" className='text-white hover:text-yellow-500 no-underline'>
                     About
                 </NavLink>
-                <NavLink to="/equipments" className='text-white hover:text-yellow-500'>
+                <NavLink to="/equipments" className='text-white hover:text-yellow-500 no-underline'>
                     Membership
                 </NavLink>
-                <NavLink to="/staff" className='text-white hover:text-yellow-500'>
+                <NavLink to="/staff" className='text-white hover:text-yellow-500 no-underline'>
                     Staff
                 </NavLink>
-                <NavLink to="/shop" className='text-white hover:text-yellow-500'>
+                <NavLink to="/shop" className='text-white hover:text-yellow-500 no-underline'>
                     Shop
                 </NavLink>
-                <NavLink to="/staff" className='text-white hover:text-yellow-500'>
+                <NavLink to="/contact" className='text-white hover:text-yellow-500 no-underline'>
                     Contact
                 </NavLink>
             </Navbar.Collapse>

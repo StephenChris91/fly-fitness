@@ -137,7 +137,7 @@ export default function EquipmentSlider() {
         <>
             <Carousel>
                 {sliderImages.map(item => (
-                        <Carousel.Item>
+                        <Carousel.Item key={item.id}>
                             <img
                             className="w-100"
                             src={item.img}

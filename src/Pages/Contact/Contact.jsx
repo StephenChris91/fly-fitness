@@ -1,8 +1,10 @@
 
+import { useState } from 'react'
+
 //components
 import Hero from '../../Components/Hero/Hero'
 import { form, Label, TextInput, Textarea } from 'flowbite-react'
-import Button from '../../Components/Button/Button'
+import {Button} from 'react-bootstrap'
 
 //react-spring
 import { animated, useSpring } from 'react-spring'
@@ -12,6 +14,17 @@ import './Contact.css'
 
 export default function Contact() {
 
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [location, setLocation] = useState('')
+    const [subject, setSubject] = useState('')
+    const [message, setMessage] = useState('')
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log('Contact Form Submitted Successfully')
+    }
     const fadeInLeft = useSpring({
         from: {marginLeft: 100, opacity: 0},
         to: {marginLeft: 0, opacity: 1}
@@ -27,7 +40,7 @@ export default function Contact() {
 
             <div className='bg-sky-600 mx-auto mt-20 py-40 lg:px-20 sm:px-[15px] lg:w-[1200px] sm:[500px]'>
             <h1 className='font-bold text-center text-white text-4xl mb-10'>GET STARTED TODAY.</h1>
-            <animated.form className="flex flex-col gap-4" style={fadeInLeft}>
+            <animated.form className="flex flex-col gap-4" style={fadeInLeft} onSubmit={handleSubmit}>
                 <div>
                     <div className="mb-2 block">
                     <Label
@@ -41,6 +54,7 @@ export default function Contact() {
                     required={true}
                     shadow={false}
                     sizing="lg"
+                    onChange={(e) => setName(e.target.value)}
                     />
                 </div>
                 <div>
@@ -58,6 +72,7 @@ export default function Contact() {
                     required={true}
                     shadow={false}
                     sizing="lg"
+                    onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
                 <div>
@@ -74,6 +89,7 @@ export default function Contact() {
                     required={true}
                     shadow={false}
                     sizing="lg"
+                    onChange={(e) => setLocation(e.target.value)}
                     />
                 </div>
                 <div>
@@ -91,6 +107,7 @@ export default function Contact() {
                     required={true}
                     shadow={false}
                     sizing="lg"
+                    onChange={(e) => setSubject(e.target.value)}
                     />
                 </div>
                 <div className="mb-2 block">
@@ -104,8 +121,9 @@ export default function Contact() {
                     placeholder="Leave a comment..."
                     required={true}
                     rows={6}
+                    onChange={(e) => setMessage(e.target.value)}
                 />
-                <Button width='full' padding='5' bgColor='gray-900' color='white' hover='green-800' type="submit" >
+                <Button variant='dark' size='lg' type="submit" style={{ width: '100%'}}>
                         SEND
                 </Button>
                 </animated.form>

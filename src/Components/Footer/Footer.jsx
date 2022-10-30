@@ -19,9 +19,9 @@ export default function Footer() {
                 <div className="footer-div-sections">
                     <h1 className='font-bold text-lg mb-10'>Quick Links</h1>
                     <div className='flex flex-col gap-4 font-bold'>
-                        <NavLink to='/' className=''>Home</NavLink>
-                        <NavLink to='/about' className=''>About</NavLink>
-                        <NavLink to='/staff' className=''>Staff</NavLink>
+                        <NavLink to='/' className='text-black no-underline'>Home</NavLink>
+                        <NavLink to='/about' className='text-black no-underline'>About</NavLink>
+                        <NavLink to='/staff' className='text-black no-underline'>Staff</NavLink>
                     </div>
                     
                 </div>
@@ -41,9 +41,9 @@ export default function Footer() {
                         </div>
                         <div className='flex items-start justify-start gap-4'>
                             <HiOutlineLocationMarker className='ml-0 text-2xl'/><p>Ground Floor, 
-                                <br />Providence Court Building
-                                <br />Ajibade Junction, Mokola Road
-                                <br />Ibadan, Nigeria.</p>
+                            <br />Providence Court Building
+                            <br />Ajibade Junction, Mokola Road
+                            <br />Ibadan, Nigeria.</p>
                         </div>
                     </div>
                 </div>
